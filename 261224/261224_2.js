@@ -2,12 +2,22 @@ const express = require('express')
 
 const app = express()
 
+app.set('view engine', 'ejs')
+
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.render('index')
+})
+
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
+app.get('/user/:username', (req, res) => {
+    res.render('user')
 })
 
 app.get('/oatlatteman', (req, res) => {
-    res.send('This is actual page of my GitHub')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/user/:username/:id', (req, res) => {
