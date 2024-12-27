@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('This is actual home page')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/oatlatteman', (req, res) => {
