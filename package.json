@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node 161224_3.js"
+    "start": "node 261224_1.js"
   },
   "author": "Dmitrii",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "currency-converter-lt": "^2.0.1"
+    "currency-converter-lt": "^2.0.1",
+    "express": "^4.21.2"
   }
 }
