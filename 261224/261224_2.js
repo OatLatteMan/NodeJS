@@ -13,7 +13,8 @@ app.get('/about', (req, res) => {
 })
 
 app.get('/user/:username', (req, res) => {
-    res.render('user')
+    let data = {username: req.params.username, hobbies: ['footbal', 'basketball', 'programming']}
+    res.render('user', data)
 })
 
 app.get('/oatlatteman', (req, res) => {

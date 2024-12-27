@@ -6,6 +6,9 @@
     <title>Express JS</title>
 </head>
 <body>
-    <h1>Main page</h1>
+    <h1>The page of username: <%= username %></h1>
+    <% if (username.toLowerCase() == 'dimas') {%>
+    <p>Test</p>
+    <% } %>
 </body>
 </html>
