@@ -31,6 +31,10 @@ header nav a {
 }
 
 header nav a:hover {
+    text-decoration: none;
+}
+
+header input {
     border: 1px solid silver;
     border-radius: 5px;
     background: transparent;
@@ -40,11 +44,7 @@ header nav a:hover {
     outline: none;
 }
 
-header input {
-    border: 1px solid black;
-}
-
-header input:focus{
+header input:focus {
     border-color: #dd5353;
 }
 
@@ -54,12 +54,26 @@ header button {
     color: #661f1f;
     padding: 6px 10px;
     border-radius: 2px;
-    transition: transform 500ms ease;
+    transition: trasform 500ms ease;
 }
 
 header button:hover {
-    width: 350px;
+    cursor: pointer;
+    transform: scale((1.2));
+}
+
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+main p{
+    width: 350ox;
     background-color: #dd5353;
     margin: 50px auto;
-
+    border-radius: 10px;
+    padding: 20px;
+    color: #661f1f;
+    line-height: 150%;
+    font-weight: bold;
 }
